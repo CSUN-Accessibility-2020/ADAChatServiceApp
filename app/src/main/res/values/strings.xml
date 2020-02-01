@@ -2,4 +2,5 @@
     <string name="app_name">Decibel</string>
     <string name="title_activity_test_page">TestPage</string>
     <string name="title_activity_hearing__test">Hearing_Test</string>
+    <string name="title_activity_voice__test">Voice_Test</string>
 </resources>
