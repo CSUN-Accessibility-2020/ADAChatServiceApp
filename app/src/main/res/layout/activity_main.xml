@@ -6,51 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/discordButton"
-        style="@style/LargeButtonText"
-        android:layout_width="216dp"
-        android:layout_height="131dp"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="285dp"
-        android:layout_marginEnd="122dp"
-        android:layout_marginBottom="50dp"
-        android:text="@string/discord_button_text"
-        app:layout_constraintBottom_toTopOf="@+id/skypeButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/skypeButton"
-        style="@style/LargeButtonText"
-        android:layout_width="216dp"
-        android:layout_height="131dp"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="122dp"
-        android:layout_marginBottom="128dp"
-        android:text="@string/skype_button_text"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="460dp"
+        android:layout_height="221dp"
+        android:contentDescription="@string/DecibelLogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/discordButton" />
-
-    <TextView
-        android:id="@+id/chooseText"
-        android:gravity="center"
-        style="@style/TitleText"
-        android:layout_width="372dp"
-        android:layout_height="138dp"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="126dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginBottom="97dp"
-        android:text="@string/choose_platform_text"
-        app:layout_constraintBottom_toTopOf="@+id/discordButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/decibellogo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
