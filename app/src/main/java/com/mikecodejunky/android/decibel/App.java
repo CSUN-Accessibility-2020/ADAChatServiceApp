@@ -5,21 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
+public class App extends AppCompatActivity {
 
-    private Button discordSwitch;
+    private ImageButton settingsSwitch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_app);
 
+        settingsSwitch = findViewById(R.id.settingsButton);
 
-        discordSwitch = findViewById(R.id.discordButton);
-
-        discordSwitch.setOnClickListener(new View.OnClickListener() {
+        settingsSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -31,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void moveToApp(){
 
-        Intent intent = new Intent(MainActivity.this, App.class);
+        Intent intent = new Intent(App.this, Settings.class);
         startActivity(intent);
-
+        overridePendingTransition(R.anim.push_left_enter,R.anim.push_left_exit);
     }
+
 }

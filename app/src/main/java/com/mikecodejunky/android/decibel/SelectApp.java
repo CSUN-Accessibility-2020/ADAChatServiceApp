@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class SelectApp extends AppCompatActivity {
 
     private Button discordSwitch;
 
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void moveToApp(){
 
-        Intent intent = new Intent(MainActivity.this, App.class);
+        Intent intent = new Intent(SelectApp.this, App.class);
         startActivity(intent);
 
     }
