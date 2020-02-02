@@ -16,4 +16,5 @@
         <item>Spanish</item>
     </string-array>
     <string name="DecibelLogo">Logo</string>
+    <string name="next">Next</string>
 </resources>

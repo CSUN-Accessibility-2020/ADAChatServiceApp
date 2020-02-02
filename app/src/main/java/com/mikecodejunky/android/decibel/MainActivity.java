@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button discordSwitch;
+    private Button selectSwitch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        discordSwitch = findViewById(R.id.discordButton);
+        selectSwitch = findViewById(R.id.selectButton);
 
-        discordSwitch.setOnClickListener(new View.OnClickListener() {
+        selectSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -31,8 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void moveToApp(){
 
-        Intent intent = new Intent(MainActivity.this, App.class);
+        Intent intent = new Intent(MainActivity.this, SelectApp.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.push_left_enter,R.anim.push_left_exit);
 
     }
 }
