@@ -76,7 +76,7 @@
         android:layout_width="182dp"
         android:layout_height="42dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="37dp"
         android:layout_marginBottom="495dp"
         android:text="@string/offline_mode"
@@ -99,5 +99,35 @@
         app:layout_constraintStart_toEndOf="@+id/offlineText"
         app:layout_constraintTop_toBottomOf="@+id/langRadioGroup"
         tools:checked="false" />
+
+    <TextView
+        android:id="@+id/voiceText"
+        style="@style/SettingsText"
+        android:layout_width="167dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="450dp"
+        android:gravity="center"
+        android:text="@string/voice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offlineText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/voiceSpinner"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="431dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/voiceText"
+        app:layout_constraintTop_toBottomOf="@+id/offlineText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
