@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.os.Bundle;
-import android.widget.Spinner;
 
 
 public class Settings extends AppCompatActivity {
@@ -37,6 +37,5 @@ public class Settings extends AppCompatActivity {
         overridePendingTransition(R.anim.push_right_enter,R.anim.push_right_exit);
     }
 
-    Spinner spinner = (Spinner) findViewById(R.id.voiceSpinner);
 
 }

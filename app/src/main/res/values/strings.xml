@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Decibel</string>
-    <string name="choose_platform_text">Choose your app</string>
-    <string name="skype_button_text">Skype</string>
-    <string name="discord_button_text">Discord</string>
+    <string name="choose_platform_text">Listen to..</string>
+    <string name="skype_button_text">Discord</string>
+    <string name="discord_button_text">Everything</string>
     <string name="back_button_using_image_of_a_back_arrow">Back Button using image of a back arrow</string>
     <string name="language">Language</string>
     <string name="english_radio">English</string>

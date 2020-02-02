@@ -118,16 +118,5 @@
         app:layout_constraintTop_toBottomOf="@+id/offlineText"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Spinner
-        android:id="@+id/voiceSpinner"
-        android:layout_width="210dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="431dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/voiceText"
-        app:layout_constraintTop_toBottomOf="@+id/offlineText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
